@@ -1,9 +1,7 @@
-#Usamos un vecor para guardar las palabras introducidas por el usuario
-paraula=[]
-#Hacemos un bucle para pedir 5 palabras al usuario
-for conteo in range(5):
-    limit=5-conteo
-    paraules=input("Introdueix", limit, " paraules més")
-    paraula.append[paraules]
-#Mostramos las palabras en orden inverso al introducido por el usuario
-print.invers(paraula)
+#Pedimos cinco palabras al usuario y las mostramos en orden inverso
+paraula=(input("Introdueix la paraula 1"))
+paraula2=(input("Introdueix la paraula 2"))
+paraula3=(input("Introdueix la paraula 3"))
+paraula4=(input("Introdueix la paraula 4"))
+paraula5=(input("Introdueix la paraula 5"))
+print(paraula5,",",paraula4,",",paraula3,",",paraula2,",",paraula)
