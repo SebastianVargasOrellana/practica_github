@@ -5,5 +5,5 @@ for conteo in range(5):
     limit=5-conteo
     paraules=input("Introdueix", limit, " paraules més")
     paraula.append[paraules]
-#Mostramos las palabras en orden inverso al introducido por el usuario
-print.invers(paraula)
+#Mostramos las palabras en orden introducido por el usuario
+print(paraula)
