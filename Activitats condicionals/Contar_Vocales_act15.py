@@ -1,6 +1,10 @@
 import string
 frase="No hay mal que dure cien años"
-vocales="a e i o u A E I O U"
-Vocales_en_frase=vocales.count(frase)
+vocala=frase.count("aeiou")
+vocele=frase.count("e")
+vocali=frase.count("i") 
+vocalo=frase.count("o")
+vocalu=frase.count("u")
+vocales=vocala+vocele+vocali+vocalo+vocalu
 print(frase)
-print("La frase tiene ",Vocales_en_frase," vocales")
+print("La frase tiene ",vocales," vocales")
