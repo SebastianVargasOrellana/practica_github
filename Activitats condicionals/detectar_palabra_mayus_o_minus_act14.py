@@ -8,3 +8,5 @@ cantidad=texto_minus.count(palabra_minus)
 posicion=texto_minus.index(palabra_minus)
 if cantidad>0:
     print("La palabra ",palabra," se encuentra en la posición ",posicion, "y se repite ",cantidad, "veces")  
+else:
+    print("La palabra no se encuentra en el texto")
