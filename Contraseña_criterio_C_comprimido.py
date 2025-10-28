@@ -14,10 +14,11 @@ e=[]
 cont=0
 x=list(c)
 for i, f in enumerate(pe[:len(c)]):
-    if not x in pe:
-        e.append[i+1]
+    if not x == pe:
+        e.append(i+1)
         cont=cont+1
-        print("\n"f"Error en el digito {e[cont]}")
+        print("\n"f"Error en el digito {cont}")
+        i+1
 if 6>=len(c)<=8:
      print("Contraseña con longitud incorrecta")
 
