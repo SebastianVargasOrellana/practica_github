@@ -1,3 +1,4 @@
+## Ejercicio 16
 import string
 #inicializo valores a cada variable
 var_numero="6734"

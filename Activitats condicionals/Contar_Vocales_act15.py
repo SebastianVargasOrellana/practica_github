@@ -1,6 +1,8 @@
+## Contar_Vocales_act15.py
 import string
 frase="No hay mal que dure cien años"
-vocala=frase.count("aeiou")
+#cuento las vocales
+vocala=frase.count("a")
 vocele=frase.count("e")
 vocali=frase.count("i") 
 vocalo=frase.count("o")

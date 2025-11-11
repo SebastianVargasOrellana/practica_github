@@ -13,26 +13,27 @@ c=input("Introduce una contraseña válida")
 x=list(c)
 simbolos1="*_@"
 simbolos2="&/#"
-if 6<= len(c)>=8:
- if not 1<=x[0]<=5:
+
+if not 1<=x[0]<=5:
     error.append("Error en el dígito 1")
- if not x[1].islower():
+if not x[1].islower():
     error.append("Error en el dígito 2")
- if not x[2].isupper():
+if not x[2].isupper():
     error.append("Error en el dígito 3")
- if simbolos1 !=x[3]:
+if simbolos1 !=x[3]:
     error.append("Error en el dígito 4")
- if not x[4].isupper:
+if not x[4].isupper:
     error.append("Error en el dígito 5")
- if not 6<=x[5]<=10:
+if not 6<=x[5]<=10:
     error.append("Error en el dígito 6")
- if simbolos2!=x[6]:
+if simbolos2!=x[6]:
     error.append("Error en el dígito 7")
- if x[7]>=5:
+if x[7]>=5:
     error.append("Error en el dígito 8")
     print(error)
-else:
-    if not 6<= len(c)>=8:
+if not 6<= len(c)>=8:
         print("Longitud incorrecta")
-    else:
+for e in error:
+    print(f"Error en el dígito{e}")
+else:
         print("Contraseña válida")

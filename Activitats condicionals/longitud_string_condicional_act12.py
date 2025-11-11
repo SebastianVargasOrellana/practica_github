@@ -1,3 +1,5 @@
+### Ejercicio 12
+import string
 texto=input("Introduce un texto: ")
 longitud=len(texto)
 if longitud<11:

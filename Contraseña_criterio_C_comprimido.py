@@ -8,18 +8,29 @@ print("Posición 5: Una letra mayúscula")
 print("Posición 6: Un número mayor o igual que 6 y menor o igual que 9")
 print("Posició 7: Ha de ser un dels següents símbols: &, /, #")
 print("Posició 8: Un número menor o igual que 5")
-pe=[lambda a: a.isnumeric() and 1<=a<=5, lambda b: b.isupper(), lambda c: c in "* _ @", lambda d: d.isupper(), lambda e: e.isnumeric() and 6<=e<=10,lambda f: f in "& / #", lambda g: g.isnumeric and g<=5 ]
-c=input("Introduce una contraseña válida: ")
-e=[]
-cont=0
-x=list(c)
-for i, f in enumerate(pe[:len(c)]):
-    if not x == pe:
-        e.append(i+1)
-        cont=cont+1
-        print("\n"f"Error en el digito {cont}")
-        i+1
-if 6>=len(c)<=8:
-     print("Contraseña con longitud incorrecta")
+#Aquí he hecho una lista con los errores definidos con la función lambda
+pe = [
+    lambda a: a.isnumeric() and 1 <= int(a) <= 5,
+    lambda b: b.islower(),
+    lambda d: d.isupper(),
+    lambda c: c in "* _ @",
+    lambda e: e.isnumeric() and 6 <= int(e) <= 10,
+    lambda f: f in "& / #",
+    lambda g: g.isnumeric() and int(g) <= 5
+]
 
+c = input("Introduce una contraseña válida: ")
+x = list(c)
+e = []
+
+if not 6 <= len(c) <= 8:
+    print("Contraseña con longitud incorrecta")
+#Aquí he hecho un bucle en el que se compara la lista y la contraseña
+for i, (car, regla) in enumerate(zip(x, pe)):
+    #Se añade un error a la lista si no son iguales
+    if not regla(car):
+        e.append((i, car))
+#Hago un bucle que escriba los errores en las posiciones de la lista e
+for idx, m in e:
+    print(f"Error en la posición {idx+1}")
     

@@ -1,8 +1,11 @@
+## Ejercicio 14
 import string
 texto="A quien madruga Dios le ayuda."
 print(texto)
+# paso todo el texto a minusculas para evitar errores de mayusculas o minusculas
 texto_minus=texto.lower()
 palabra=input("Introduce una palabra a buscar: ")
+# paso la palabra a minusculas para evitar errores de mayusculas o minusculas
 palabra_minus=palabra.lower()
 cantidad=texto_minus.count(palabra_minus)
 posicion=texto_minus.index(palabra_minus)
