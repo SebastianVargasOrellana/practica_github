@@ -1,3 +1,4 @@
+#Programa que pida n números y que, tras introducir el último número, debe aparecer por pantalla el número total de positivos, negativos y número de 0.
 n=int(input("Introduce la cantidad de números que escribirás"))
 numero_natural=0
 numero_negativo=0

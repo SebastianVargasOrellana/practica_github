@@ -1,3 +1,4 @@
+#Imprime el siguiente patrón utilizando for:
 n=5
 num=[]
 for i in range(5):

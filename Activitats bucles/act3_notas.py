@@ -1,3 +1,4 @@
+# Programa que pregunte cuantas notas quiero introducir y para cada nota diga si estoy aprobado o suspendido
 n_notas=int(input("Introduce cuantas notas quieres comprobar"))
 aprobado=[]
 suspenso=[]

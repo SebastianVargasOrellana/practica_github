@@ -1,3 +1,4 @@
+#Crea un programa que cuente todos los números pares hasta el número 50
 impares=0
 pares=0
 for i in range (0,50,2):

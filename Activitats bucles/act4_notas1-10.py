@@ -1,3 +1,4 @@
+#A partir del programa anterior, establece los rangos para que el usuario no pueda introducir notas inferiores a 0 y superiores a 10
 n_notas=int(input("Introduce cuantas notas quieres comprobar"))
 aprobado=[]
 suspenso=[]

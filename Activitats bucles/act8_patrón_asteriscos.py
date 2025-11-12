@@ -1,3 +1,4 @@
+#Imprima el siguiente patrón con el ciclo for. 
 for i in range (0,5):
     print("*"*i)
 for i in range (5,0,-1):
