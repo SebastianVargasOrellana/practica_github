@@ -5,8 +5,8 @@ for i in range (5, 0, -1):
     print(f"Te quedan {i} intenos")
     letra=(input("Introduce una letra en la palabra secreta: "))
     x=p.find(letra)
-    if x:
+    if x>=0:
         print("La letra está en la palabra")
-    if not x:
-        print("La palabra no se ha encontrado")
+    if x<0:
+        print("La letra no se ha encontrado")
         

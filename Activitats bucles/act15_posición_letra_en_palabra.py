@@ -3,9 +3,10 @@ p=input("Introduce la palabra secrteta: ")
 for i in range(len(p)):
     l=input("Introduce la letra que quieres buscar en la palabra secreta")
     x=p.find(l)
-    if x:
+    x=x+1
+    if x>=1:
         print(f"La letra se encuentra en la posición{x} de la palabra secreta")
-    elif not x:
+    elif x<=0:
         print("Letra no encontrada en la palabra secreta")
 
     
