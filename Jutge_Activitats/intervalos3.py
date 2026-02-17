@@ -8,18 +8,17 @@ def interval_intersection(a1, b1, a2, b2):
 def main():
     try:
         values = input().strip().split()
-        if len(values) != 4:
-            print()
-            return
         a1, b1, a2, b2 = map(int, values)
-        if a1 > b1 or a2 > b2:
-            print()
-            return
         result = interval_intersection(a1, b1, a2, b2)
         if result:
-            print(f"[{result[0]},{result[1]}]")
-        else:
-            print("[]")
+            if result[0] == a1 and result[1] == b1 and result[0] == a2 and result[1] == b2:
+                print(f"= , [{result[0]}, {result[1]}]")
+            elif result[0] == a1 and result[1] == b1:
+                print(f"1 [{result[0]}, {result[1]}]") 
+            elif result[0] == a2 and result[1] == b2:
+                print(f"2 [{result[0]}, {result[1]}]")
+            else:
+                print("?")
     except ValueError:
         print()
 if __name__ == "__main__":
