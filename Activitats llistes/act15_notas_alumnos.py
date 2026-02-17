@@ -3,7 +3,7 @@ lni=[]
 lnc=[]
 lnca=[]
 while p!='n':
-    e=input("Introduce el nobre del estudiante: ")
+    e=input("Introduce el nombre del estudiante: ")
     ni=input("Introduce la nota de inglés: ")
     nc=input("Introduce la nota de castellano: ")
     nca=input("Introduce la nota de catalán")
@@ -15,12 +15,9 @@ def ordenar_notas(notas):
     lista_ordenada=notas.sort()
     return lista_ordenada
 def mediana_notas(notas):
-    m=len(notas)
-    m=int(m/2)
+    m=int(len(notas)//2)
     elemento1=notas[m]
-    m+=1
-    elemento2=notas[m]
-    m-=1
+    elemento2=notas[m-1]
     if int(m)%2==0:
         mediana=elemento1+(elemento2-elemento1)/2
     elif int(m)%2!=0:
