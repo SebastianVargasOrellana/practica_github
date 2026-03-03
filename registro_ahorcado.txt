@@ -1,0 +1,5 @@
+Fecha y hora: 2026-02-27 15:20:31, Tiempo total: 4 minutos y 40 segundos
+Fecha y hora: 2026-02-27 15:20:48, Tiempo total: 0 minutos y 8 segundos
+Fecha y hora: 2026-02-27 15:22:21, Tiempo total: 0 minutos y 4 segundos
+Fecha y hora: 2026-02-27 15:25:22, Tiempo total: 0 minutos y 20 segundos
+Fecha y hora: 2026-02-27 15:40:51, Tiempo total: 0 minutos y 45 segundos
